@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+body{
+    background-color: #a2a8d3;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container{
+    background-color: #e7eaf6;
+    min-height: 100vh;
+    min-width: 500px;
+    margin: 0 380px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    background-color: #cad0ff;
+    padding: 0 30px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+
+main{
+    padding-top: 70px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 180px;
+}
+
+.state{
+    margin-bottom: 34px;
+    flex-shrink: 1;
+    font-size: 1.7em;
+}
+
+.title{
+    font-family: 'Lugrasimo', cursive;
+    text-transform: uppercase;
+    font-size: 3.9em;
+    flex-shrink: 1;
+}
+
+.game{
+    width: 80%;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    border-style: none;
+    background-color: #a2a8d3;
+    border-radius: 28px;
+    font-size: 60px;
+    padding: 20px 30px;
+    transition: all 1.2s ease-in-out;
+    box-shadow: -3px 3px 0 1px #3b447e;
+}
+
+button:active{
+    position: relative;
+    top: 2px;
+}
+
+.score{
+    font-size: 3em;
+    margin-top: 60px;
+}
