@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"/>
     <title>Rock Paper Scissors</title>
-  </head>
-  <body>
-    <div class="container">
-      <main>
+</head>
+<body>
+<div class="container">
+    <main>
         <div class="title">
             rock paper scissors
         </div>
         <div class="game">
-            <div class="state"></div>
+            <div class="state">
+                <!--            js will add text here-->
+            </div>
             <div class="buttons">
-                <button class="rock">🪨</button>
-                <button class="paper">📃</button>
-                <button class="scissors">✂️</button>
+                <button id="rock" onclick="play('rock')">🪨</button>
+                <button id="paper" onclick="play('paper')">📃</button>
+                <button id="scissors" onclick="play('scissors')">✂️</button>
             </div>
             <div class="score">
+                <span id="user-emoji"></span>
                 🧑
-                <span id="human-score">0</span>
+                <span id="user-score">0</span>
                 -
                 <span id="computer-score">0</span>
                 🤖
+                <span id="computer-emoji"></span>
             </div>
         </div>
-      </main>
-      <footer>
+    </main>
+    <footer>
         <span>
-            © Made by <a href="https://github.com/pljjy">pljjy</a>
+            © Made by <a href="https://github.com/pljjy" target="_blank">pljjy</a>
         </span>
-      </footer>
-    </div>
+    </footer>
+</div>
 
-    <script src="scripts.js"></script>
-  </body>
+<script src="scripts.js"></script>
+</body>
 </html>
