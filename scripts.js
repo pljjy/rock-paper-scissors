@@ -9,8 +9,15 @@ const computerEmoji = document.querySelector("#computer-emoji");
 const userScore = document.querySelector("#user-score");
 const computerScore = document.querySelector("#computer-score");
 
+const rockBtn = document.querySelector("#rock");
+const paperBtn = document.querySelector("#paper");
+const scissorsBtn = document.querySelector("#scissors");
 
 // EVERYTHING ELSE
+rockBtn.addEventListener("click", e => play(e.target.id));
+paperBtn.addEventListener("click", e => play(e.target.id));
+scissorsBtn.addEventListener("click", e => play(e.target.id))
+
 function getComputerChoice() {
     return choices[Math.floor(Math.random() * 3)];
 }
